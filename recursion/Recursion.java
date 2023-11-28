@@ -1,20 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package recursion;
 
-/**
- *
- * @author huong
- */
-public class Recursion {
+import static methods.RecursiveMultiplication.recursiveMultiplication;
+import static methods.RecursivePowerFunction.recursivePower;
+import static methods.StringReverse.reverseString;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public class Recursion 
+{
+    public static void main(String[] args) 
+    {
+        // Test recursive multiplication
+        int resultMul1 = recursiveMultiplication(7, 4);
+        int resultMul2 = recursiveMultiplication(5, 3);
+        System.out.println("Recursive Multiplication Results: " + resultMul1 + ", " + resultMul2);
+
+        // Test recursive power
+        int resultPow1 = recursivePower(2, 3);
+        int resultPow2 = recursivePower(4, 2);
+        System.out.println("Recursive Power Results: " + resultPow1 + ", " + resultPow2);
+
+        // Test string reverser
+        System.out.print("String Reverser Results: ");
+        reverseString("hello");
+        System.out.print(", ");
+        reverseString("java");
+    } 
 }

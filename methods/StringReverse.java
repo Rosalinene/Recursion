@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package methods;
 
-/**
- *
- * @author huong
- */
-public class StringReverse {
-    
+public class StringReverse 
+{
+    public static void reverseString(String inputStr) 
+    {
+        reverseStringHelper(inputStr, inputStr.length() - 1);
+    }
+
+    private static void reverseStringHelper(String inputStr, int index) 
+    {
+        if (index >= 0) 
+        {
+            System.out.print(inputStr.charAt(index));
+            reverseStringHelper(inputStr, index - 1);
+        }
+    }
 }

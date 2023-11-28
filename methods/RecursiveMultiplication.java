@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package methods;
 
-/**
- *
- * @author huong
- */
-public class RecursiveMultiplication {
-    
+public class RecursiveMultiplication 
+{
+    public static int recursiveMultiplication(int x, int y) 
+    {
+        if (y == 0) 
+        {
+            return 0;
+        }
+        return x + recursiveMultiplication(x, y - 1);
+    }
 }
