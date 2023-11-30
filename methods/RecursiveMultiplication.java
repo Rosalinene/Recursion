@@ -35,7 +35,10 @@ public class RecursiveMultiplication
         if (y == 0) 
         {
             return 0;
-        }
-        return x + recursiveMultiplication(x, y - 1);
-    }
-}
+        }//End if
+        else 
+        {
+            return x + recursiveMultiplication(x, y - 1);
+        }//Enf else
+    }//End recursiveMultiplication
+}//End RecursiveMultiplication

@@ -16,14 +16,12 @@ String Reverser – Write a recursive function that accepts a string object as i
 argument and prints the string in reverse order.
  */
 package methods;
-
 /**
  *
  * @author huong
  */
 public class RecursivePowerFunction 
 {
-
     /**
      *
      * @param base
@@ -35,7 +33,10 @@ public class RecursivePowerFunction
         if (exponent == 0) 
         {
             return 1;
-        }
-        return base * recursivePower(base, exponent - 1);
-    }
-}
+        }//End if
+        else
+        {
+            return base * recursivePower(base, exponent - 1);
+        }//End else
+    }//End recursivePower
+}//End RecursivePowerFunction 

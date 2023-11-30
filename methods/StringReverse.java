@@ -23,22 +23,20 @@ package methods;
  */
 public class StringReverse 
 {
-
     /**
      *
      * @param inputStr
      */
     public static void reverseString(String inputStr) 
     {
-        reverseStringHelper(inputStr, inputStr.length() - 1);
-    }
-
-    private static void reverseStringHelper(String inputStr, int index) 
-    {
-        if (index >= 0) 
+        if (inputStr.length() == 0) 
         {
-            System.out.print(inputStr.charAt(index));
-            reverseStringHelper(inputStr, index - 1);
-        }
-    }
-}
+            return;
+        }//End if
+        else 
+        {
+            System.out.print(inputStr.charAt(inputStr.length() - 1));
+            reverseString(inputStr.substring(0, inputStr.length() - 1));
+        }//End else
+    }//End reverseString
+}//End StringReverse 
