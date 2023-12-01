@@ -27,16 +27,20 @@ public class StringReverse
      *
      * @param inputStr
      */
-    public static void reverseString(String inputStr) 
+    public static String reverseString(String inputStr) 
     {
+        String reversed ="";
         if (inputStr.length() == 0) 
         {
-            return;
+            return reversed;
         }//End if
         else 
         {
-            System.out.print(inputStr.charAt(inputStr.length() - 1));
-            reverseString(inputStr.substring(0, inputStr.length() - 1));
+            reversed += inputStr.substring(0, inputStr.length() - 1);
+            reversed += reverseString(inputStr.substring(0, inputStr.length() - 1));
+            //System.out.print(inputStr.charAt(inputStr.length() - 1));
+            //reverseString(inputStr.substring(0, inputStr.length() - 1));
         }//End else
+        return reversed;
     }//End reverseString
 }//End StringReverse 

@@ -24,7 +24,7 @@ import static methods.StringReverse.reverseString;
 public class Recursion 
 {
     /**
-     *
+     *test
      * @param args
      */
     public static void main(String[] args) 
@@ -32,17 +32,28 @@ public class Recursion
         // Test recursive multiplication
         int resultMul1 = recursiveMultiplication(7, 4);
         int resultMul2 = recursiveMultiplication(5, 3);
-        System.out.println("Recursive Multiplication Results: " + resultMul1 + ", " + resultMul2);
-
+        int resultMul3 = recursiveMultiplication(6, 9);
+        System.out.println("Recursive Multiplication Results: ");
+        System.out.println(resultMul1);
+        System.out.println(resultMul2);
+        System.out.println(resultMul3);
+        
         // Test recursive power
         int resultPow1 = recursivePower(2, 3);
         int resultPow2 = recursivePower(4, 2);
-        System.out.println("Recursive Power Results: " + resultPow1 + ", " + resultPow2);
-
+        int resultPow3 = recursivePower(5, 8);
+        System.out.println("Recursive Power Results: ");
+        System.out.println(resultPow1);
+        System.out.println(resultPow2);
+        System.out.println(resultPow3);
+        
         // Test string reverser
-        System.out.print("String Reverser Results: ");
-        reverseString("hello");
-        System.out.print(", ");
-        reverseString("java");
+        String resultStr1 = "hello world";
+        String resultStr2 = "Java Course";
+        String resultStr3 = "Recursion";
+        System.out.println("String Reverser Results: ");
+        System.out.println(reverseString(resultStr1));
+        System.out.println(reverseString(resultStr2));
+        System.out.println(reverseString(resultStr3));
     }//End main
 }//End Recursion 

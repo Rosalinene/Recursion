@@ -23,14 +23,18 @@ package methods;
 public class RecursivePowerFunction 
 {
     /**
-     *
+     * recursivePower
      * @param base
      * @param exponent
      * @return
      */
     public static int recursivePower(int base, int exponent) 
     {
-        if (exponent == 0) 
+        if (base ==0)
+        {
+            return 0; 
+        }
+        else if (exponent == 0)
         {
             return 1;
         }//End if

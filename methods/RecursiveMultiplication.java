@@ -25,7 +25,7 @@ public class RecursiveMultiplication
 {
 
     /**
-     *
+     * recursiveMultiplication
      * @param x
      * @param y
      * @return
