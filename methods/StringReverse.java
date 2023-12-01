@@ -29,14 +29,14 @@ public class StringReverse
      */
     public static String reverseString(String inputStr) 
     {
-        String reversed ="";
+        String reversed = "";
         if (inputStr.length() == 0) 
         {
             return reversed;
         }//End if
         else 
         {
-            reversed += inputStr.substring(0, inputStr.length() - 1);
+            reversed += inputStr.charAt(inputStr.length() - 1);
             reversed += reverseString(inputStr.substring(0, inputStr.length() - 1));
             //System.out.print(inputStr.charAt(inputStr.length() - 1));
             //reverseString(inputStr.substring(0, inputStr.length() - 1));
