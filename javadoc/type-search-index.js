@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"recursion","l":"Recursion"},{"p":"methods","l":"RecursiveMultiplication"},{"p":"methods","l":"RecursivePowerFunction"},{"p":"methods","l":"StringReverse"}];updateSearchResults();
