@@ -33,11 +33,11 @@ public class RecursivePowerFunction
         if (base ==0)
         {
             return 0; 
-        }
+        }//End if
         else if (exponent == 0)
         {
             return 1;
-        }//End if
+        }//End else if
         else
         {
             return base * recursivePower(base, exponent - 1);

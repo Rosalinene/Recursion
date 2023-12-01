@@ -24,12 +24,13 @@ package methods;
 public class StringReverse 
 {
     /**
-     *
+     * reverseString
      * @param inputStr
      */
     public static String reverseString(String inputStr) 
     {
         String reversed = "";
+        
         if (inputStr.length() == 0) 
         {
             return reversed;
@@ -38,8 +39,6 @@ public class StringReverse
         {
             reversed += inputStr.charAt(inputStr.length() - 1);
             reversed += reverseString(inputStr.substring(0, inputStr.length() - 1));
-            //System.out.print(inputStr.charAt(inputStr.length() - 1));
-            //reverseString(inputStr.substring(0, inputStr.length() - 1));
         }//End else
         return reversed;
     }//End reverseString

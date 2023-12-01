@@ -33,6 +33,7 @@ public class Recursion
         int resultMul1 = recursiveMultiplication(7, 4);
         int resultMul2 = recursiveMultiplication(5, 3);
         int resultMul3 = recursiveMultiplication(6, 9);
+        
         System.out.println("Recursive Multiplication Results: ");
         System.out.println(resultMul1);
         System.out.println(resultMul2);
@@ -42,6 +43,7 @@ public class Recursion
         int resultPow1 = recursivePower(2, 3);
         int resultPow2 = recursivePower(4, 2);
         int resultPow3 = recursivePower(5, 8);
+        
         System.out.println("Recursive Power Results: ");
         System.out.println(resultPow1);
         System.out.println(resultPow2);
@@ -51,6 +53,7 @@ public class Recursion
         String resultStr1 = "hello world";
         String resultStr2 = "Java Course";
         String resultStr3 = "Recursion";
+        
         System.out.println("String Reverser Results: ");
         System.out.println(reverseString(resultStr1));
         System.out.println(reverseString(resultStr2));

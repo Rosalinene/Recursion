@@ -39,6 +39,6 @@ public class RecursiveMultiplication
         else 
         {
             return x + recursiveMultiplication(x, y - 1);
-        }//Enf else
+        }//End else
     }//End recursiveMultiplication
 }//End RecursiveMultiplication
